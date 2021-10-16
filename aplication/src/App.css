@@ -1,0 +1,221 @@
+/* ************** LOGIN PAGE ******************* */
+.App-logo-Login{
+  width: 15%;
+}
+.sectionLogin {
+    background: #ffff;
+    text-align: center;
+    border: solid #F37328 2px;
+    border-radius: 50px;
+    margin: 0% auto;
+    width: 40%;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.messageError{
+  color:red;
+}
+
+.sectionLogin h2 {
+  color: #F37328;
+  display: block;
+  text-align: center;
+}
+
+.formLogin{
+  width: 85%;
+  padding: 15px;
+}
+
+.formInput{
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  height: 30px;
+  border: 1px #F37328 solid;
+}
+
+.formButton {
+  background-color: #F37328 ;
+  border-radius: 10px;
+  border: solid #E35400 1px;
+  margin: 20px;
+  padding: 8px;
+  width: 60%;
+  color: white;
+}
+
+/* ************** NAVIGATION PAGE ******************* */
+.navigation{ 
+  width: 60%;
+  margin-top: 22px;
+  margin-left: 35%;
+  padding-right: 0px;
+  display: inline-flex;
+  justify-content: flex-end;
+ 
+}
+
+#btnProfile{
+  background: #F37328;
+}
+
+.navButton{
+  margin: 20px;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  border: solid #FFD505 1px;
+  background: #252525;
+  font-size:medium;
+}
+
+.linkButton{
+  color: white;
+  text-decoration: none;
+
+}
+
+.container{
+  height: 140px;
+}
+
+.App-logo{
+  margin: 10px;
+  position:absolute;
+  display: inline-block;
+  width:12%;
+  align-items: center;  
+}
+
+/* ************** MUENU PAGE ******************* */
+.containerAllMenu{
+  margin: 10px;
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: solid #FFD505 1px;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  
+
+}
+.sectionAllMenu{
+  display: inline-flex;
+  width: 49.5%;
+  height: 500px;  
+  float: left;
+  border: solid #FFD505 1px;
+  border-bottom-style: none;
+  border-top-style: none;
+  border-left-style: none;
+}
+
+.containerPedidos{
+  display: inline-block;
+  width: 50%;
+  height: 500px; 
+}
+
+  .btnMenu{
+  margin: 15px;
+  height: 50px;
+  width: 120px;
+  border-radius: 15px;
+  border: solid #FFD505 1px;
+  background: #252525;  
+  color: white;
+  font-size: 12px;
+}
+
+.lblPedido{
+  margin-top: 30px;
+  margin-left: 250px;
+  color: white;
+
+}
+
+.inputNameClient{
+  height: 20px;
+  margin-left: 150px;
+  width: 50%;
+ 
+}
+
+/* ************** PROFILE PAGE ******************* */
+.btnProfileUp{
+  background-color:rgb(243, 243, 11) ;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 8px;
+  width: 25%;
+  border:none;
+  box-shadow: 3px 2px 2px rgb(54, 54, 54);
+}
+
+.btnProfileDelete{
+  background-color: #FE2A2A;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 8px;
+  width: 25%;
+  border:none;
+  box-shadow: 3px 2px 2px rgb(54, 54, 54);
+}
+
+.btnBack{
+  height: 60px;
+  width: 120px;
+  border-radius: 15px;
+  border: solid #FFD505 2px;
+  background: #252525;
+  font-size:medium;
+  color: white;
+  float: right;
+  margin-right: 50px;
+  margin-top: 60px;
+}
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
