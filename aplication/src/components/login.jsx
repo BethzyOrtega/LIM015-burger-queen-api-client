@@ -1,6 +1,10 @@
 import Logo from '../Imagenes/LogoHamburgesa.png';
 import React , {useState} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUser, faUnlock} from '@fortawesome/free-solid-svg-icons';
+
 const axios = require('axios');
+
 
 const Login = (props) => {   
     const [credenciales, setCredenciales] = useState({
@@ -18,6 +22,7 @@ const Login = (props) => {
             ...credenciales,
             [e.target.name] : e.target.value
         })
+        // console.log(e.target.value)
     };
 
     const btnlogin = (e) => {
@@ -25,8 +30,8 @@ const Login = (props) => {
         const URL = 'https://apiburgerqueen-bkom.herokuapp.com/auth';
          axios.post(URL, credenciales).then((res) => {
              if (res.request.status === 200){
-                 localStorage.setItem('token', res.data.token);
-                // console.log(res.data.token);
+                localStorage.setItem('token', res.data.token);
+                // console.log(JSON.parse(localStorage.setItem('token', res.data.token)));
                 props.history.push('/menu');
              }
          })
@@ -34,7 +39,7 @@ const Login = (props) => {
             error: true,
             errorMsg: res.request.response
         }))
-
+    
     }
 
     return (
@@ -44,9 +49,11 @@ const Login = (props) => {
         <section className="sectionLogin">
             <h2> Welcome To Kathzy's Burger</h2>
             <form className="formLogin">
-                 <input className="formInput" name="email" placeholder="Email Adress" onChange={inputCredencial}></input> <br />
-                <input type="password" className="formInput" name="password" placeholder="Password" onChange={inputCredencial}></input><br />
-                <button className="formButton" onClick={btnlogin}>LOGIN</button>
+            <FontAwesomeIcon icon ={faUser} />
+               <input className="formInput" name="email" placeholder="Email Adress" onChange={inputCredencial} ></input> <br />
+               <FontAwesomeIcon icon ={faUnlock} />
+               <input type="password" className="formInput" name="password" placeholder="Password" onChange={inputCredencial}></input><br />
+               <button className="formButton" onClick={btnlogin}>LOGIN</button>
             </form>
             { messageError.error === true &&
              <section className="messageError" name="errorMsg">{messageError.errorMsg}</section>

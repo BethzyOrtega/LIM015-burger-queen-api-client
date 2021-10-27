@@ -10,17 +10,18 @@ import Menu from "./components/menu"
 import Admin from './components/admin';
 import Orders from './components/orders';
 import Profile from './components/profile';
-// import Nav from './components/nav';
-
+import AdminUsers from "./components/adminUsers";
+import AdminProducts from "./components/adminProductos"
 
 function App() {
   return (
     <Router>
-       {/* <Nav />       */}
       <Switch>
         <Route exact path="/" component = {Login} /> 
         <Route path="/menu" component= {Menu}/> 
-        <Route path="/admin" component = {Admin} />
+        <Route exact path="/admin" component = {Admin} />
+          <Route exact path="/admin/users" component = {AdminUsers} />
+          <Route exact path="/admin/products" component = {AdminProducts} />
         <Route path="/orders" component = {Orders} />
         <Route path="/profile" component = {Profile} /> 
       </Switch>
