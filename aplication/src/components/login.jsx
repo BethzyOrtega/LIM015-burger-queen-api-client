@@ -22,7 +22,6 @@ const Login = (props) => {
             ...credenciales,
             [e.target.name] : e.target.value
         })
-        // console.log(e.target.value)
     };
 
     const btnlogin = (e) => {
@@ -49,9 +48,9 @@ const Login = (props) => {
         <section className="sectionLogin">
             <h2> Welcome To Kathzy's Burger</h2>
             <form className="formLogin">
-            <FontAwesomeIcon icon ={faUser} />
+            <FontAwesomeIcon className="faUser" icon ={faUser} />
                <input className="formInput" name="email" placeholder="Email Adress" onChange={inputCredencial} ></input> <br />
-               <FontAwesomeIcon icon ={faUnlock} />
+               <FontAwesomeIcon className="faUnlock" icon ={faUnlock} />
                <input type="password" className="formInput" name="password" placeholder="Password" onChange={inputCredencial}></input><br />
                <button className="formButton" onClick={btnlogin}>LOGIN</button>
             </form>

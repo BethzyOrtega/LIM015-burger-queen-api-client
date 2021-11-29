@@ -48,9 +48,6 @@ const AdminProducts = () => {
     const [id, setId] =useState({
         id:''
     });
-    // const [idUp, setidUp] =useState({
-    //     id:''
-    //   });
 
     const [dataCapturada, setdataCapturada] = useState({
       id:'',
